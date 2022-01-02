@@ -1,0 +1,30 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+    font-size: 33px;
+}
+
+@media screen and (max-width: 1000px) {
+    .logo {
+        font-family: 'Abril Fatface', cursive;
+        color: white;
+        font-size: 13px;
+    }
+}
+
+.about-us {
+    font-family: 'Unna', serif;
+    /* font-weight: 300; */
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}

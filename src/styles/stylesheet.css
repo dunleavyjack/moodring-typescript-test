@@ -1,0 +1,415 @@
+body {
+    background: #000000;
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+}
+
+.page-container {
+    width: 100vw;
+    height: 100vh;
+    background: url('../assets/images/baseVector.png') bottom no-repeat;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.blank {
+    color: black;
+    font-family: 'Unna', serif;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.name {
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 33px;
+}
+
+.about {
+    color: white;
+    font-family: 'Unna', serif;
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+.page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo-vector {
+    margin-top: 80px;
+}
+
+.text-arc {
+    padding-top: 20px;
+    width: 80%;
+    max-width: 1000px;
+    min-width: 400px;
+    height: auto;
+}
+
+.text-tag {
+    font-family: 'Unna', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 114.7%;
+    letter-spacing: 1.5px;
+
+    font-family: Unna;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 114.7%;
+
+    max-width: 335px;
+    color: white;
+    position: relative;
+    bottom: 35px;
+}
+
+.button {
+    width: 271px;
+    height: 41px;
+    border-radius: 40.5px;
+    font-family: 'Unna', serif;
+    font-size: 23px;
+    line-height: 29px;
+    font-weight: 700;
+}
+
+.spotify-login {
+    background: #ffffff;
+    position: relative;
+    bottom: 40px;
+}
+
+.spotify-login:hover {
+    background: #3ad760;
+}
+
+.demo {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    transition: color 0.4s;
+    transition: background-color 0.1s;
+}
+
+.demo:hover {
+    background-color: white;
+    color: #000000;
+    transition: color 0.4s;
+    transition: background-color 0.1s;
+}
+
+.text-sub-tag {
+    color: #ffffff;
+    font-family: 'Unna', serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.footer-text {
+    color: #ffffff;
+    font-family: 'Unna', serif;
+    font-size: 20px;
+    position: absolute;
+    font-weight: 400;
+    bottom: 0px;
+}
+
+.footer-text-bottom {
+    color: #ffffff;
+    font-family: 'Unna', serif;
+    font-weight: 400;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.analyzing-name {
+    font-family: 'Unna', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #f62a29;
+    margin: 0px;
+    padding: 0px;
+    line-height: 50.68px;
+    margin-top: 14px;
+}
+
+.analyzing-artist {
+    font-family: 'Unna', serif;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 30.41px;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.analyzing-album {
+    font-family: 'Unna', serif;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 30.41px;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.about-moodring-image {
+    width: 392.73px;
+}
+
+.about-moodring-text {
+    font-family: 'Unna', serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 31.1px;
+    letter-spacing: 1%;
+    max-width: 680px;
+    margin: 0px;
+}
+
+.about-us-image {
+    margin-top: 180px;
+    width: 367px;
+    margin-bottom: 40px;
+}
+
+.name-circle {
+    font-family: 'Unna' serif;
+    font-size: 25px;
+    font-weight: 400;
+    width: 200px;
+    border: 1px solid #ffffff;
+    height: 47px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.about-person-image {
+    width: 495px;
+    margin-bottom: 0;
+}
+
+.jeonghye {
+    position: relative;
+    left: 100px;
+    top: 5px;
+    margin-top: 35px;
+}
+
+.jack {
+    position: relative;
+    right: 70px;
+}
+
+.job-text {
+    font-family: 'Unna', serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 23.7px;
+    margin: 0;
+}
+
+.email-text {
+    font-family: 'Unna' serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 94.7%;
+    margin: 10px;
+}
+
+.link-icon {
+    width: 21px;
+    height: 21px;
+    margin: 5px;
+}
+
+.link-icon:hover {
+    filter: invert(11%) sepia(100%) saturate(6384%) hue-rotate(264deg)
+        brightness(57%) contrast(119%);
+}
+
+.tech-stack {
+    width: 548px;
+    margin-top: 100px;
+}
+
+.privacy-border {
+    width: 621px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.privacy-border-bottom {
+    margin-top: 40px;
+    width: 600px;
+}
+
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Unna', serif; */
+
+.houses-container {
+    position: relative;
+}
+
+.houses {
+    margin-top: 200px;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.lights {
+    margin-top: 200px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.lights:hover {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.circular-portrait {
+    position: relative;
+    width: 30vh;
+    height: 30vh;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circular-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.center-image {
+    position: absolute;
+    /* bottom: 200px; */
+}
+
+.breakdown-box-one {
+    margin-top: 60px;
+    width: 1016px;
+    height: 1975px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 100px;
+
+    background: #141414;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 736.799px 736.242px 0px 0px;
+}
+
+.breakdown-box-two {
+    width: 100%;
+    height: 100%;
+    background: #141414;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 736.799px 736.242px 0px 0px;
+}
+
+.full-breakdown-img {
+    width: 273px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.breakdown-container {
+    margin-bottom: 70px;
+}
+
+.breakdown-container:nth-of-type(4) {
+    margin-bottom: 20px;
+}
+
+.emoji {
+    font-size: 116px;
+}
+
+.breakdown-percent {
+    font-family: 'Abril Fatface' cursive;
+    font-size: 82px;
+    font-weight: 700;
+    line-height: 116px;
+    margin: 0px;
+}
+
+.breakdown-mood {
+    font-family: 'Unna' serif;
+    font-weight: 700;
+    font-size: 43px;
+    margin: 0;
+}
+
+.keyboard {
+    width: 893px;
+    margin: 0;
+}
+
+.sound-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 60px;
+}
+
+.sound-key {
+    font-family: 'Abril Fatface' cursive;
+    font-size: 95.67px;
+    color: '#ffffff';
+    margin: 0;
+}
+
+.sound-text {
+    font-family: 'Unna' serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.sound-button {
+    width: 450px;
+    background-color: #ffffff;
+    border-radius: 28px;
+    height: 43.34px;
+    color: #000000;
+    font-family: 'Unna' serif;
+    font-size: 22px;
+}
+
+.unna {
+    font-family: 'Unna' serif;
+}
