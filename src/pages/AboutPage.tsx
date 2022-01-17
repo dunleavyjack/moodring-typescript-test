@@ -1,89 +1,96 @@
 import React from 'react';
-// import Header from '../components/Header';
-import Header from '../components/Header/Header';
-import aboutMoodRing from '../assets/images/aboutMoodRing.png';
-import aboutUs from '../assets/images/aboutUs.png';
-import NameCircle from '../components/NameCircle';
-import aboutJack from '../assets/images/aboutJack.png';
-import aboutJeonghye from '../assets/images/aboutJeonghye.png';
-import linkedinIcon from '../assets/images/linkedinIcon.png';
-import mediumIcon from '../assets/images/mediumIcon.png';
-import githubIcon from '../assets/images/githubIcon.png';
-import techStack from '../assets/images/techStack.png';
-import privacyBorder from '../assets/images/privacyBorder.png';
-import privacyBorderBottom from '../assets/images/privacyBorderBottom.png';
-import Person from '../components/Person';
+import ResponsiveImage from '../components/ResponsiveImage/ResponsiveImage';
+import aboutMoodRingDesktop from '../assets/images/aboutMoodRingDesktop.png';
+import aboutMoodRingMobile from '../assets/images/aboutMoodRingMobile.png';
+import aboutUsDesktop from '../assets/images/aboutUsDesktop.png';
+import aboutUsMobile from '../assets/images/aboutUsMobile.png';
+import techStackDesktop from '../assets/images/techStackDesktop.png';
+import techStackMobile from '../assets/images/techStackMobile.png';
+import privacyBorderDesktop from '../assets/images/privacyBorderDesktop.png';
+import privacyBorderMobile from '../assets/images/privacyBorderMobile.png';
+import privacyBorderBottomDesktop from '../assets/images/privacyBorderBottomDesktop.png';
+import privacyBorderBottomMobile from '../assets/images/privacyBorderBottomMobile.png';
+import '../styles/responsive.css';
 
-const AboutPage = () => {
+// import Person from '../components/Person';
+
+const AboutPage: React.FC = () => {
     return (
-        <>
-            <Header />
-            <div
-                style={{
-                    width: '100vw',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    textAlign: 'center',
-                    color: '#ffffff',
-                }}
-            >
-                <img
-                    className="about-moodring-image"
-                    src={aboutMoodRing}
-                    alt="About Mood Ring"
-                    style={{ marginTop: '40px' }}
-                />
-                <h3 className="about-moodring-text">
-                    Mood Ring detect your mood based on different analytics of
-                    each song (tempo, energy, acousticness, etc.) There are over
-                    thirty moods and discover your mood!
-                    <br />
-                    <br />
-                    Moods are strange and ineffale. <br /> But hopefully it
-                    connected with you :)
-                </h3>
+        <div className="page-content">
+            <ResponsiveImage
+                mobileURL={aboutMoodRingMobile}
+                desktopURL={aboutMoodRingDesktop}
+                breakPoint="700px"
+                imageClass="about-moodring-image"
+                imageAlt="About Moodring"
+            />
+            <h3 className="about-moodring-text">
+                Mood Ring detects your mood based on different analytics of each
+                song (tempo, energy, acousticness, etc.) There are over thirty
+                moods and discover your mood!
+                <br />
+                <br />
+                Moods are strange and ineffale. <br /> But hopefully it
+                connected with you :)
+            </h3>
 
-                <img className="about-us-image" src={aboutUs} alt="About Us" />
+            <ResponsiveImage
+                mobileURL={aboutUsMobile}
+                desktopURL={aboutUsDesktop}
+                breakPoint="700px"
+                imageClass="about-us-image"
+                imageAlt="About Us"
+            />
 
-                <h3 className="about-moodring-text">
-                    We started this Mood Ring winter ver. project to celebrate
-                    Jack’s holiday and Jeonghye’s finishing final (with straight
-                    A’s :D)
-                    <br />
-                    <br />
-                    These nerds worked on 23rd and 24th of Dec with booze.
-                </h3>
+            {/* <img className="about-us-image" src={aboutUs} alt="About Us" /> */}
 
-                <Person name="name" photoURL="" linkedIn="" />
+            <h3 className="about-moodring-text">
+                We started this Mood Ring winter ver. project to celebrate
+                Jack’s holiday and Jeonghye’s finishing final (with straight A’s
+                :D)
+                <br />
+                <br />
+                These nerds worked on 23rd and 24th of Dec with booze.
+            </h3>
 
-                <img src={techStack} className="tech-stack" alt="tech-stack" />
+            {/* <Person name="name" photoURL="" linkedIn="" /> */}
 
-                <h3 className="about-moodring-text">
-                    This project was built with React, Redux, Bootstrap 5, the
-                    Spotify Web API, Spotify OAuth2, and designed in Figma. It’s
-                    also hosted with Vercel and the full code is available on
-                    GitHub here.
-                </h3>
+            <ResponsiveImage
+                mobileURL={techStackMobile}
+                desktopURL={techStackMobile}
+                breakPoint="700px"
+                imageClass="tech-stack-image"
+                imageAlt="How Mood Ring is Built"
+            />
 
-                <img
-                    src={privacyBorder}
-                    className="privacy-border"
-                    alt="Privacy"
-                />
-                <h3 className="about-moodring-text">
-                    The complete Spotify privacy policy can be viewed here,
-                    which also covers approved third-party projects like this
-                    one.
-                </h3>
-                <img
-                    src={privacyBorderBottom}
-                    className="privacy-border-bottom"
-                    alt="Privacy Divider"
-                />
-            </div>
-            <h5 className="footer-text-bottom">2021/2022 Winter Ver.</h5>
-        </>
+            <h3 className="about-moodring-text">
+                This project was built with React, Redux, Bootstrap 5, the
+                Spotify Web API, Spotify OAuth2, and designed in Figma. It’s
+                also hosted with Vercel and the full code is available on GitHub
+                here.
+            </h3>
+
+            <ResponsiveImage
+                mobileURL={privacyBorderMobile}
+                desktopURL={privacyBorderDesktop}
+                breakPoint="700px"
+                imageClass="privacy-border"
+                imageAlt="Privacy"
+            />
+
+            <h3 className="about-moodring-text">
+                The complete Spotify privacy policy can be viewed here, which
+                also covers approved third-party projects like this one.
+            </h3>
+
+            <ResponsiveImage
+                mobileURL={privacyBorderBottomMobile}
+                desktopURL={privacyBorderBottomDesktop}
+                breakPoint="700px"
+                imageClass="privacy-border-bottom"
+                imageAlt="Privacy Divider"
+            />
+        </div>
     );
 };
 

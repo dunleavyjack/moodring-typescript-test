@@ -1,0 +1,66 @@
+/* Responsive images and text that share similar breakpoints */
+
+.about-moodring-image {
+    width: 392.73px;
+    margin-top: 140px;
+}
+
+.about-us-image {
+    margin-top: 180px;
+    width: 367px;
+    margin-bottom: 40px;
+}
+
+.tech-stack-image {
+    width: 548px;
+    margin-top: 100px;
+}
+
+.privacy-border {
+    width: 621px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.privacy-border-bottom {
+    margin-top: 40px;
+    width: 600px;
+}
+
+.about-moodring-text {
+    font-family: 'Unna', serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 31.1px;
+    letter-spacing: 1%;
+    max-width: 680px;
+    margin: 0px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .about-moodring-image {
+        width: 367px;
+        margin-top: 150px;
+    }
+
+    .about-us-image {
+        width: 356px;
+    }
+
+    .tech-stack-image {
+        width: 355px;
+    }
+
+    .privacy-border {
+        width: 367px;
+    }
+
+    .privacy-border-bottom {
+        width: 349px;
+    }
+
+    .about-moodring-text {
+        font-size: 20px;
+    }
+}

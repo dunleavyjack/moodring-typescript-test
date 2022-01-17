@@ -1,0 +1,16 @@
+.toggle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.toggle-label {
+    font-family: Unna serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 5px;
+}

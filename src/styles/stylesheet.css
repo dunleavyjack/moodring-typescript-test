@@ -1,81 +1,30 @@
 body {
     background: #000000;
-    /* overflow: hidden; */
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
-.page-container {
+.page {
+    position: relative;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background: url('../assets/images/baseVector.png') bottom no-repeat;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.blank {
-    color: black;
-    font-family: 'Unna', serif;
-    font-size: 20px;
-    margin-left: 40px;
-}
-
-.name {
-    color: white;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 33px;
-}
-
-.about {
-    color: white;
-    font-family: 'Unna', serif;
-    font-size: 20px;
-    margin-right: 40px;
+.responsive-padding {
+    padding-bottom: 100px;
 }
 
 .page-content {
     display: flex;
+    min-height: 90vh;
+    color: #ffffff;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-}
-
-.logo-vector {
-    margin-top: 80px;
-}
-
-.text-arc {
-    padding-top: 20px;
-    width: 80%;
-    max-width: 1000px;
-    min-width: 400px;
-    height: auto;
-}
-
-.text-tag {
-    font-family: 'Unna', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 114.7%;
-    letter-spacing: 1.5px;
-
-    font-family: Unna;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    line-height: 114.7%;
-
-    max-width: 335px;
-    color: white;
-    position: relative;
-    bottom: 35px;
+    overflow-x: hidden;
 }
 
 .button {
@@ -86,61 +35,11 @@ body {
     font-size: 23px;
     line-height: 29px;
     font-weight: 700;
+    z-index: 999;
 }
 
-.spotify-login {
-    background: #ffffff;
-    position: relative;
-    bottom: 40px;
-}
-
-.spotify-login:hover {
-    background: #3ad760;
-}
-
-.demo {
-    background-color: transparent;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    transition: color 0.4s;
-    transition: background-color 0.1s;
-}
-
-.demo:hover {
-    background-color: white;
-    color: #000000;
-    transition: color 0.4s;
-    transition: background-color 0.1s;
-}
-
-.text-sub-tag {
-    color: #ffffff;
-    font-family: 'Unna', serif;
-    font-weight: 400;
-    font-size: 18px;
-    margin-top: 25px;
-    margin-bottom: 12px;
-    letter-spacing: 1px;
-}
-
-.footer-text {
-    color: #ffffff;
-    font-family: 'Unna', serif;
-    font-size: 20px;
-    position: absolute;
-    font-weight: 400;
-    bottom: 0px;
-}
-
-.footer-text-bottom {
-    color: #ffffff;
-    font-family: 'Unna', serif;
-    font-weight: 400;
-    margin-top: 150px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 20px;
-}
+/* ############################################# */
+/* above checked */
 
 .analyzing-name {
     font-family: 'Unna', serif;
@@ -169,26 +68,6 @@ body {
     line-height: 30.41px;
     font-size: 24px;
     margin: 0px;
-}
-
-.about-moodring-image {
-    width: 392.73px;
-}
-
-.about-moodring-text {
-    font-family: 'Unna', serif;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 31.1px;
-    letter-spacing: 1%;
-    max-width: 680px;
-    margin: 0px;
-}
-
-.about-us-image {
-    margin-top: 180px;
-    width: 367px;
-    margin-bottom: 40px;
 }
 
 .name-circle {
@@ -247,22 +126,6 @@ body {
 .link-icon:hover {
     filter: invert(11%) sepia(100%) saturate(6384%) hue-rotate(264deg)
         brightness(57%) contrast(119%);
-}
-
-.tech-stack {
-    width: 548px;
-    margin-top: 100px;
-}
-
-.privacy-border {
-    width: 621px;
-    margin-top: 100px;
-    margin-bottom: 40px;
-}
-
-.privacy-border-bottom {
-    margin-top: 40px;
-    width: 600px;
 }
 
 /* font-family: 'Abril Fatface', cursive;

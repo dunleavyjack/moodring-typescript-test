@@ -1,0 +1,9 @@
+.spotify-login {
+    background: #ffffff;
+    position: relative;
+    bottom: 40px;
+}
+
+.spotify-login:hover {
+    background: #3ad760;
+}

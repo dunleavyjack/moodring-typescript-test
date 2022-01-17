@@ -11,14 +11,14 @@ const handleAboutClick = () => {
 
 const Header: React.FC = (): JSX.Element => {
     return (
-        <div className="header-container">
-            <h1 className="name" onClick={handleHomeClick}>
+        <>
+            <h1 className="home" onClick={handleHomeClick}>
                 Mood Ring
             </h1>
-            <h2 className="about-us" onClick={handleAboutClick}>
+            <h2 className="about" onClick={handleAboutClick}>
                 About Us
             </h2>
-        </div>
+        </>
     );
 };
 

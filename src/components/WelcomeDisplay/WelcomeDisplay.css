@@ -1,0 +1,23 @@
+.responsive-feeling {
+    padding-top: 20px;
+    width: 80%;
+    max-width: 1000px;
+    min-width: 375px;
+    height: auto;
+}
+
+.logo-vector {
+    margin-top: 150px;
+}
+
+.text-tag {
+    font-family: 'Unna', serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 114.7%;
+    letter-spacing: 1.5px;
+    max-width: 335px;
+    color: white;
+    position: relative;
+    bottom: 35px;
+}

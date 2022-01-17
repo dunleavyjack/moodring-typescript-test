@@ -1,9 +1,9 @@
 import React from 'react';
 import snowflake from '../../assets/images/snowflake.png';
 import smallSnowflake from '../../assets/images/smallSnowflake.png';
-import './snow.css';
+import './Snow.css';
 
-const Snow = () => {
+const Snow: React.FC = () => {
     return (
         <div className="snowflakes">
             <img

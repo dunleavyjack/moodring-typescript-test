@@ -1,0 +1,24 @@
+.demo {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    transition: color 0.4s;
+    transition: background-color 0.1s;
+}
+
+.demo:hover {
+    background-color: white;
+    color: #000000;
+    transition: color 0.4s;
+    transition: background-color 0.1s;
+}
+
+.demo-label {
+    color: #ffffff;
+    font-family: 'Unna', serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
